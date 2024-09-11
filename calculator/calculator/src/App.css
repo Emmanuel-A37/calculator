@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #c2c2d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculator{
+  border: 2px solid black;
+  max-width: 80vw;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+#formulaScreen{
+  height: 27px;
+  width: 100%;
+  max-width: 80vw;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#display{
+  height: 40px;
+  width: 100%;
+  max-width: 80vw;
+  margin-bottom: 10px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#buttons{
+  width: 100%;
+  max-width: 60vw;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.key{
+  width: 80px;
+  height: 65px;
+  color: white;
+  background-color: #4d4d4d;  
+  border: 2px solid black;
+}
+
+#decimal, #subtract, #add, #multiply{
+  background-color: #666666;
+}
+
+#clear{
+  background-color: #ac3939;
+  grid-area: 1 / 1 / span 1 / span 2;
+  width: 160px;
+  height: 65px;
+}
+
+#equals{
+  background-color: #004466;
+  grid-area: 4 / 4 / span 2 / span 1;
+  width: 80px;
+  height: 130px;
+}
+
+#zero{
+  grid-area: 5 / 1 / span 1 / span 2 ;
+  width: 160px;
+  height: 65px;
+}
